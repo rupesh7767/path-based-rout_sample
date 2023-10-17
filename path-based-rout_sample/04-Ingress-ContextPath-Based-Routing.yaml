@@ -12,7 +12,7 @@ spec:
       port:
         number: 80
   rules:
-    - host: 'cision.com'
+    - host: 'cision'
       http:
         paths:
           - path: /app1
