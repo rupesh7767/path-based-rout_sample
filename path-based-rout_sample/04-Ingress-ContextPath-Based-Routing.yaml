@@ -6,13 +6,14 @@ metadata:
     # External Load Balancer
     kubernetes.io/ingress.class: "gce"
 spec:
+  ingressClassName: nginx-internal
   defaultBackend:
     service:
       name: app3-nginx-nodeport-service
       port:
         number: 80
   rules:
-    - host: 'cision'
+    - host: 'cision.com'
       http:
         paths:
           - path: /app1
