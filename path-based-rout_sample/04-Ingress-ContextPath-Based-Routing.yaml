@@ -5,12 +5,7 @@ metadata:
   annotations:
     # External Load Balancer  
     kubernetes.io/ingress.class: "gce"  
-spec: 
-  defaultBackend:
-    service:
-      name: app3-nginx-nodeport-service
-      port:
-        number: 80                            
+spec:                            
   rules:
     - http:
         paths:           
